@@ -4,10 +4,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define  HASH     LA(&kp N3)
-#define  SCN_FLL  LC(LA(&kp RET))
-#define  SCN_LFT  LC(LA(&kp LEFT))
-#define  SCN_RGT  LC(LA(&kp RIGHT))
+#define  MC_HASH    LA(N3)
+#define  SC_FLL  LC(LA(RET))
+#define  SC_LFT  LC(LA(LEFT))
+#define  SC_RGT  LC(LA(RIGHT))
 
 
 / {
@@ -46,7 +46,7 @@
         &CAPS_WORD &kp Q      &kp W      &kp E       &kp R       &kp T      &tog 3                                                      &none    &kp Y     &kp U       &kp I       &kp O      &kp P         &kp CAPS 
         &kp ESC    &hm LALT A &hm LGUI S &hm LCTRL D &hm LSHFT F &kp G      &none           &kp LGUI   &none    &none   &kp LALT        &none    &kp H     &hm RSHFT J &hm RCTRL K &hm RGUI L &hm RALT SEMI &kp RET
         &kp LSHFT  &kp Z      &kp X      &kp C       &kp V       &kp B                                 &none    &none                            &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp RSHFT
-        &mo 2      &mo 3      &none      &none       &none                      &lt 2 BSPC  &kp LCTRL  &kp DEL  &none   &kp TAB   &lt 3 SPACE              SCN_LFT     SCN_FLL     SCN_RGT    &mo 3         &mo 2
+        &mo 2      &mo 3      &none      &none       &none                      &lt 2 BSPC  &kp LCTRL  &kp DEL  &none   &kp TAB   &lt 3 SPACE              &kp SC_LFT  &kp SC_FLL  &kp SC_RGT &mo 3         &mo 2
       >;
     };
     mac_adjust {
@@ -61,8 +61,8 @@
     symbols {
       bindings = <
         &trans     &kp F1     &kp F2     &kp F3      &kp F4      &kp F5     &trans                                                      &trans   &kp F6    &kp F7      &kp F8      &kp F9     &kp F10       &trans
-        &trans     &kp F11    &kp F12    &kp POUND   &kp DQT     &kp APOS   &trans                                                      &trans   &none     &kp UNDER   &kp MINUS   &kp EQUAL  &kp PLUS      &trans
-        &trans     &kp EXCL   &kp AT     HASH        &kp DLLR    &kp PRCNT  &trans          &trans     &trans   &trans  &trans          &trans   &kp CARET &kp AMPS    &kp STAR    &kp LPAR   &kp RPAR      &trans
+        &trans     &kp F11    &kp F12    &kp POUND   &kp DQT     &kp APOS   &trans                                                      &trans   &kp DLLR  &kp UNDER   &kp MINUS   &kp EQUAL  &kp PLUS      &trans
+        &trans     &kp EXCL   &kp AT     &kp HASH    &kp MC_HASH &kp PRCNT  &trans          &trans     &trans   &trans  &trans          &trans   &kp CARET &kp AMPS    &kp STAR    &kp LPAR   &kp RPAR      &trans
         &trans     &kp BSLH   &kp GRAVE  &kp TILDE   &kp PIPE    &trans                                &trans   &trans                           &none     &kp LBRC    &kp RBRC    &kp LBKT   &kp RBKT      &trans
         &trans     &trans     &none      &none       &none                      &trans      &trans     &trans   &trans  &trans    &trans                   &none       &none       &none      &trans        &trans
       >;
