@@ -9,6 +9,9 @@
 #define  SC_LFT  LC(LA(LEFT))
 #define  SC_RGT  LC(LA(RIGHT))
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
 
 / {
     behaviors {
@@ -36,9 +39,6 @@
 
     };
 
-    &caps_word {
-        continue-list = <UNDERSCORE MINUS>;
-    };
   
   keymap {
     compatible = "zmk,keymap";
