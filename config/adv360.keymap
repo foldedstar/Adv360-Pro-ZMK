@@ -37,7 +37,7 @@
         &trans    &trans   &trans     &trans     &trans     &trans     &trans                                                                &trans   &trans    &trans     &trans     &trans     &trans    &trans
         &trans    &trans   &trans     &trans     &trans     &trans     &trans               &kp LCTRL  &trans   &trans  &trans               &trans   &trans    &trans     &trans     &trans     &trans    &trans
         &trans    &trans   &trans     &trans     &trans     &trans                                     &trans   &trans                                &trans    &trans     &trans     &trans     &trans    &trans
-        &trans    &trans   &trans     &trans     &tran                           &kp LGUI   &trans     &trans   &trans  &trans    &trans                        &trans     &trans     &trans     &trans    &trans
+        &trans    &trans   &trans     &trans     &trans                          &kp LGUI   &trans     &trans   &trans  &trans    &trans                        &trans     &trans     &trans     &trans    &trans
       >;
     };
     symbols {
