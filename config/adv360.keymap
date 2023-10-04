@@ -73,27 +73,6 @@
         };
     };
 
-    macros {
-        mc_sw: mc_sw {
-            label = "MAC_SWITCH";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 0>
-                , <&tog 3>
-                ; // enable mac overlay layer
-        };
-        pc_sw: pc_sw {
-            label = "PC_SWITCH";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 1>
-                , <&tog 3>
-                ; // disable mac overlay layer
-        };
-    };
- 
     keymap {
         compatible = "zmk,keymap";
 
@@ -152,5 +131,25 @@ layer_5 {
   >;
 };
 
+    macros {
+        mc_sw: mc_sw {
+            label = "MAC_SWITCH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 0>
+                , <&tog 3>
+                ; // enable mac overlay layer
+        };
+        pc_sw: pc_sw {
+            label = "PC_SWITCH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 1>
+                , <&tog 3>
+                ; // disable mac overlay layer
+        };
+    };
   };
 };
