@@ -79,7 +79,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&bt BTSEL 0>
+                = <&bt BT_SEL 0>
                 , <&tog 3>
                 ; // enable mac overlay layer
         };
@@ -88,7 +88,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&bt BTSEL 1>
+                = <&bt BT_SEL 1>
                 , <&tog 3>
                 ; // disable mac overlay layer
         };
