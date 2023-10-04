@@ -104,7 +104,7 @@ layer_0 {
     &kp ESC   &hml LALT A &hml LGUI S &hml LCTRL D &hml LSHFT F &kp G    &tog 2          &kp LGUI   &none    &none   &kp LALT        &none    &kp H   &hmr RSHFT J &hmr RCTRL K &hmr RGUI L &hmr RALT SEMI &kp RET
     &kp LSHFT  &kp Z      &kp X       &kp C       &kp V       &kp B                                 &none    &none                            &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp RSHFT
     &mo 1      &mo 2      &none       &none       &none                      &tlm 1 BSPC &kp LCTRL  &kp DEL  &none   &kp TAB   &tlm 2 SPACE             &none       &none       &none      &mo 2         &mo 1
- >;i
+ >;
 };
 layer_1 {
   bindings = <
