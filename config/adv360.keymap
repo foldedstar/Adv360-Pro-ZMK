@@ -74,7 +74,7 @@
     };
 
     macros {
-        mc_sw : mc_sw {
+        mc_sw: mc_sw {
             label = "MAC_SWITCH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -83,7 +83,7 @@
                 , <&tog 3> // enable mac overlay layer
                 ;
         };
-        pc_sw : pc_sw {
+        pc_sw: pc_sw {
             label = "PC_SWITCH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
