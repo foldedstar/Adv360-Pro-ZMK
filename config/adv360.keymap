@@ -80,8 +80,8 @@
             #binding-cells = <0>;
             bindings
                 = <&bt BTSEL 0>
-                , <&tog 3> // enable mac overlay layer
-                ;
+                , <&tog 3>
+                ; // enable mac overlay layer
         };
         pc_sw: pc_sw {
             label = "PC_SWITCH";
@@ -89,8 +89,8 @@
             #binding-cells = <0>;
             bindings
                 = <&bt BTSEL 1>
-                , <&tog 3> // disable mac overlay layer
-                ;
+                , <&tog 3>
+                ; // disable mac overlay layer
         };
     };
  
