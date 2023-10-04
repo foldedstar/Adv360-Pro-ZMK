@@ -72,6 +72,27 @@
             then-layer = <4>;
         };
     };
+
+    macros {
+        mc_sw: mc_sw {
+            label = "MAC_SWITCH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 0>
+                , <&tog 3>
+                ; // enable mac overlay layer
+        };
+        pc_sw: pc_sw {
+            label = "PC_SWITCH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 1>
+                , <&tog 3>
+                ; // disable mac overlay layer
+        };
+    };
   };
 
     keymap {
@@ -131,26 +152,6 @@ layer_5 {
     &none      &none      &none       &none       &none                       &none &none &none &none &bl BL_TOG &rgb_ug RGB_TOG                        &bl BL_INC  &bl BL_DEC  &none      &none         &none
   >;
 };
-    macros {
-        mc_sw: mc_sw {
-            label = "MAC_SWITCH";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 0>
-                , <&tog 3>
-                ; // enable mac overlay layer
-        };
-        pc_sw: pc_sw {
-            label = "PC_SWITCH";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 1>
-                , <&tog 3>
-                ; // disable mac overlay layer
-        };
-    };
 
   };
 };
