@@ -128,7 +128,7 @@
         &trans     &none      &none      &none       &none       &none      &trans                                                      &trans   &none     &none       &none       &none      &none         &trans
         &trans     &none      &kp EXCL   &kp MC_HASH &kp APOS    &kp GRAVE  &trans                                                      &trans   &kp PRCNT &kp MINUS   &kp UNDER   &kp LBRC   &kp RBRC      &trans
         &trans     &kp AT     &kp QMARK  &kp HASH    &kp DQT     &kp TILDE  &trans          &trans     &trans   &trans  &trans          &trans   &kp STAR  &kp PLUS    &kp EQUAL   &kp LPAR   &kp RPAR      &trans
-        &trans     &none      &kp BSLH   &kp POUND   &kp DLLR    &kp CARAT                             &trans   &trans                           &none     &kp AMPS    &kp PIPE    &kp LBKT   &kp RBKT      &trans
+        &trans     &none      &kp BSLH   &kp POUND   &kp DLLR    &kp CARET                             &trans   &trans                           &none     &kp AMPS    &kp PIPE    &kp LBKT   &kp RBKT      &trans
         &trans     &trans     &none      &none       &none                      &trans      &trans     &trans   &trans  &trans    &trans                   &none       &none       &none      &trans        &trans
       >;
     };
