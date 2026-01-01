@@ -92,7 +92,7 @@
             #binding-cells = <0>;
             bindings
                 = <&bt BT_SEL 0>
-                , <&tog 4>
+                , <&to 4>
                 ; // enable mac overlay layer
         };
         pc_sw: pc_sw {
@@ -101,7 +101,7 @@
             #binding-cells = <0>;
             bindings
                 = <&bt BT_SEL 1>
-                , <&tog 4>
+                , <&to 0>
                 ; // disable mac overlay layer
         };
     };
@@ -131,9 +131,9 @@
 
 layer_0 {
   bindings = <
-    &none      &kp F1     &kp F2      &kp F3      &kp F4      &kp F5     &mo 6                                                       &mo 6    &kp F6    &kp F7      &kp F8      &kp F9     &kp F10       &none
+    &none      &kp F1     &kp F2      &kp F3      &kp F4      &kp F5     &kp F6                                                      &kp F7   &kp F8    &kp F9      &kp F10     &kp F11    &kp F12       &none
     &caps_word &kp Q      &kp W       &kp E       &kp R       &kp T      &tog 4                                                      &none    &kp Y     &kp U       &kp I       &kp O      &kp P         &kp CAPS 
-    &kp ESC   &hml LALT A &hml LGUI S &hml LCTRL D &hml LSHFT F &kp G    &tog 2          &kp LGUI   &none    &none   &kp LALT        &none    &kp H   &hmr RSHFT J &hmr RCTRL K &hmr RGUI L &hmr RALT SEMI &kp RET
+    &kp ESC   &hml LALT A &hml LGUI S &hml LCTRL D &hml LSHFT F &kp G    &tog 2          &kp F4     &kp F5   &none   &kp F12         &mo 6    &kp H   &hmr RSHFT J &hmr RCTRL K &hmr RGUI L &hmr RALT SEMI &kp RET
     &kp LSHFT  &kp Z      &kp X       &kp C       &kp V       &kp B                                 &none    &none                            &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp RSHFT
     &none      &none      &none       &kp LEFT    &kp RIGHT              &tlm 1 BSPC &tmr LCTRL DEL &none    &none   &tlm 3 TAB  &tlm 2 SPACE           &kp DOWN    &kp UP      &none      &none         &none
  >;
@@ -149,7 +149,7 @@ layer_1 {
 };
 layer_2 {
   bindings = <
-    &trans     &kp F11    &kp F12     &none       &none       &none      &trans                                                      &trans   &none     &none       &none       &none      &none         &trans
+    &trans     &none      &none       &none       &none       &none      &trans                                                      &trans   &none     &none       &none       &none      &none         &trans
     &trans     &none      &none       &none       &none       &none      &trans                                                      &trans   &none     &kp N7      &kp N8      &kp N9     &none         &trans
     &trans     &none      &none       &none       &none       &none      &trans          &trans     &trans   &trans  &trans          &trans   &none     &kp N4      &kp N5      &kp N6     &none         &trans
     &trans     &none      &none       &none       &none       &none                                 &trans   &trans                           &kp N0    &kp N1      &kp N2      &kp N3     &none         &trans
@@ -169,9 +169,9 @@ layer_4 {
   bindings = <
     &trans     &trans     &trans      &trans      &trans      &trans     &trans                                                      &trans   &trans    &trans      &trans      &trans     &trans        &trans
     &trans     &trans     &trans      &trans      &trans      &trans     &trans                                                      &trans   &trans    &trans      &trans      &trans     &trans        &trans
-    &trans     &trans     &trans      &trans      &trans      &trans     &trans          &kp LCTRL  &trans   &trans  &trans          &trans   &trans    &trans      &trans      &trans     &trans        &trans
+    &trans     &trans     &trans      &trans      &trans      &trans     &trans          &trans     &trans   &trans  &trans          &trans   &trans    &trans      &trans      &trans     &trans        &trans
     &trans     &trans     &trans      &trans      &trans      &trans                                &trans   &trans                           &trans    &trans      &trans      &trans     &trans        &trans
-    &trans     &trans     &trans      &trans      &trans                     &trans   &tmr LGUI DEL &trans   &trans  &trans    &trans                   &trans      &trans      &trans     &trans        &trans
+    &trans     &trans     &trans      &trans      &trans                     &trans      &trans     &trans   &trans  &trans    &trans                   &trans      &trans      &trans     &trans        &trans
   >;
 };
 layer_5 {
