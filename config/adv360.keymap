@@ -131,9 +131,9 @@
 
 layer_0 {
   bindings = <
-    &none      &kp F1     &kp F2      &kp F3      &kp F4      &kp F5     &kp F6                                                             &kp F7      &kp F8       &kp F9      &kp F10     &kp F11    &kp F12       &none
-    &caps_word &kp Q      &kp W       &kp E       &kp R       &kp T      &tog 1                                                             &mo 6       &kp Y        &kp U       &kp I       &kp O      &kp P         &kp CAPS
-    &kp ESC   &hml LALT A &hml LGUI S &hml LCTRL D &hml LSHFT F &kp G    &tog 5          &kp F4     &kp F5      &kp LC(X)   &kp F12            &mo 5       &kp H   &hmr RSHFT J &hmr RCTRL K &hmr RGUI L &hmr RALT SEMI &kp RET
+    &mo 6      &kp F1     &kp F2      &kp F3      &kp F4      &kp F5     &kp F6                                                             &kp F7      &kp F8       &kp F9      &kp F10     &kp F11    &kp F12       &mo 6
+    &caps_word &kp Q      &kp W       &kp E       &kp R       &kp T      &tog 1                                                             &none       &kp Y        &kp U       &kp I       &kp O      &kp P         &kp CAPS
+    &kp ESC   &hml LALT A &hml LGUI S &hml LCTRL D &hml LSHFT F &kp G    &tog 5          &kp F4     &kp F5      &kp LC(X)   &kp F12         &mo 5       &kp H   &hmr RSHFT J &hmr RCTRL K &hmr RGUI L &hmr RALT SEMI &kp RET
     &kp LSHFT  &kp Z      &kp X       &kp C       &kp V       &kp B                                 &kp LC(Z)   &kp LC(C)                                  &kp N        &kp M       &kp COMMA   &kp DOT    &kp FSLH      &kp RSHFT
     &none      &none      &none       &kp LEFT    &kp RIGHT              &tlm 2 BSPC &tmr LCTRL DEL &kp LC(LS(Z)) &kp LC(V)   &tlm 5 TAB  &tlm 4 SPACE           &kp DOWN    &kp UP      &none      &none         &none
  >;
@@ -142,7 +142,7 @@ layer_1 {
   bindings = <
     &trans     &trans     &trans      &trans      &trans      &trans     &trans                                                      &trans   &trans    &trans      &trans      &trans     &trans        &trans
     &trans     &trans     &trans      &trans      &trans      &trans     &trans                                                      &trans   &trans    &trans      &trans      &trans     &trans        &trans
-    &trans     &trans   &hml LCTRL S &hml LGUI D  &trans      &trans     &trans          &trans     &trans   &trans  &trans           &trans   &trans    &trans    &hmr RGUI K &hmr RCTRL L &trans        &trans
+    &trans     &trans   &hml LCTRL S &hml LGUI D  &trans      &trans     &trans          &trans     &trans   &trans  &trans          &trans   &trans    &trans    &hmr RGUI K &hmr RCTRL L &trans        &trans
     &trans     &trans     &trans      &trans      &trans      &trans                                &trans   &trans                           &trans    &trans      &trans      &trans     &trans        &trans
     &trans     &trans     &trans      &trans      &trans                     &trans   &tmr LGUI DEL &trans   &trans  &trans    &trans                   &trans      &trans      &trans     &trans        &trans
   >;
@@ -176,8 +176,8 @@ layer_4 {
 };
 layer_5 {
   bindings = <
-    &trans     &none      &none       &none          &none         &none            &trans                                                    &trans   &none     &none       &none       &none      &none         &trans
-    &trans     &none      &none     &mmv MOVE_UP     &none         &none            &trans                                                    &trans   &none     &none       &none       &none      &none         &trans
+    &trans     &none      &none       &none          &none         &none            &trans                                                    &trans   &none     &none       &none       &none      &none        &trans
+    &trans     &none      &none     &mmv MOVE_UP     &none         &none            &trans                                                    &trans   &none     &none       &none       &none      &none        &trans
     &trans     &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_UP     &trans       &trans     &trans   &trans  &trans           &trans  &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT  &none         &trans
     &trans     &none      &none       &none          &none         &msc SCRL_DOWN                           &trans   &trans                           &kp HOME  &kp PG_DN   &kp PG_UP   &kp END    &none         &trans
     &trans     &none      &none       &none          &none                           &mkp LCLK   &mkp RCLK  &trans   &trans  &trans    &trans                   &kp SC_LFT  &kp SC_FLL  &kp SC_RGT &trans        &trans
@@ -185,9 +185,9 @@ layer_5 {
 };
 layer_6 {
   bindings = <
-    &none      &mc_sw     &pc_sw     &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans                                                   &trans   &none     &none       &none       &none      &none         &none
-    &none      &none      &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &none      &bootloader                                            &bootloader   &none     &none       &none       &none      &none         &none
-    &none      &none      &kp C_PREV   &kp C_PP    &kp C_NEXT   &none      &none      &none &none &bt BT_CLR &none     &rgb_ug RGB_MEFS_CMD 5   &none     &none       &none       &none      &none         &none
+    &trans     &mc_sw     &pc_sw     &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bootloader                                     &bootloader         &none     &none       &none       &none      &none         &trans
+    &none      &none      &kp C_VOL_DN &kp C_MUTE  &kp C_VOL_UP &none       &none                                            &none              &none     &none       &none       &none      &none         &none
+    &none      &none      &kp C_PREV   &kp C_PP    &kp C_NEXT   &none       &none      &none &none &bt BT_CLR &none     &rgb_ug RGB_MEFS_CMD 5  &none     &none       &none       &none      &none         &none
     &none      &none      &none        &none       &none        &none                       &none &none                                         &none     &none       &none       &none      &none         &none
     &none      &none      &none      &kp C_BRI_DN  &kp C_BRI_UP                 &none &none &none &none &bl BL_TOG &rgb_ug RGB_TOG                        &bl BL_INC  &bl BL_DEC  &none      &none         &none
   >;
