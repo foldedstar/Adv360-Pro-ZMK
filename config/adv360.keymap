@@ -135,7 +135,7 @@ layer_0 {
     &caps_word &kp Q      &kp W       &kp E       &kp R       &kp T      &tog 1                                                             &none       &kp Y        &kp U       &kp I       &kp O      &kp P         &kp CAPS
     &kp ESC   &hml LALT A &hml LCTRL S &hml LGUI D &hml LSHFT F &kp G    &tog 5          &kp F4     &kp F5      &kp LG(X)   &kp F12         &mo 5       &kp H   &hmr RSHFT J &hmr RGUI K &hmr RCTRL L &hmr RALT SEMI &kp RET
     &kp LSHFT  &kp Z      &kp X       &kp C       &kp V       &kp B                                 &kp LG(Z)   &kp LG(C)                               &kp N        &kp M    &kp COMMA   &kp DOT    &kp FSLH      &kp RSHFT
-    &none      &none      &none       &none       &none               &tlm 2 BSPC &tmr LGUI DEL &kp LG(LS(Z)) &kp LG(V)   &tlm 5 TAB  &tlm 4 SPACE   &kp LC(LA(LG(F5)))     &none       &none      &none         &none
+    &none      &none      &none       &none       &none               &tlm 2 BSPC &tmr LGUI DEL &kp LG(LS(Z)) &kp LG(V)   &tlm 5 TAB  &tlm 4 SPACE               &kp LC(LG(F5))   &none     &none      &none         &none
  >;
 };
 layer_1 {
